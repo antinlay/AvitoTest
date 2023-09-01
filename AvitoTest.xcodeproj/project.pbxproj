@@ -3,29 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C2518202AA1DDA200BDBBFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C25181F2AA1DDA200BDBBFB /* AppDelegate.swift */; };
-		5C2518222AA1DDA200BDBBFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2518212AA1DDA200BDBBFB /* SceneDelegate.swift */; };
-		5C2518242AA1DDA200BDBBFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2518232AA1DDA200BDBBFB /* ViewController.swift */; };
-		5C2518292AA1DDA300BDBBFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2518282AA1DDA300BDBBFB /* Assets.xcassets */; };
-		5C2518342AA1E1BF00BDBBFB /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C2518332AA1E1BF00BDBBFB /* View.xib */; };
+		7DC05E6C2AA2311300820802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E6B2AA2311300820802 /* AppDelegate.swift */; };
+		7DC05E6E2AA2311300820802 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E6D2AA2311300820802 /* SceneDelegate.swift */; };
+		7DC05E702AA2311300820802 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E6F2AA2311300820802 /* ViewController.swift */; };
+		7DC05E752AA2311500820802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC05E742AA2311500820802 /* Assets.xcassets */; };
+		7DC05E802AA2463E00820802 /* Assambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E7F2AA2463E00820802 /* Assambly.swift */; };
+		7DC05E852AA2497A00820802 /* ApiRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E842AA2497A00820802 /* ApiRequestManager.swift */; };
+		7DC05E872AA24C9200820802 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E862AA24C9200820802 /* NetworkManager.swift */; };
+		7DC05E892AA2548400820802 /* GoodsManagment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E882AA2548400820802 /* GoodsManagment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C25181C2AA1DDA200BDBBFB /* AvitoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvitoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C25181F2AA1DDA200BDBBFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C2518212AA1DDA200BDBBFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5C2518232AA1DDA200BDBBFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5C2518282AA1DDA300BDBBFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5C25182D2AA1DDA300BDBBFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C2518332AA1E1BF00BDBBFB /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		7DC05E682AA2311300820802 /* AvitoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvitoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DC05E6B2AA2311300820802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7DC05E6D2AA2311300820802 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7DC05E6F2AA2311300820802 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DC05E742AA2311500820802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DC05E792AA2311500820802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DC05E7F2AA2463E00820802 /* Assambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assambly.swift; sourceTree = "<group>"; };
+		7DC05E842AA2497A00820802 /* ApiRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestManager.swift; sourceTree = "<group>"; };
+		7DC05E862AA24C9200820802 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7DC05E882AA2548400820802 /* GoodsManagment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsManagment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5C2518192AA1DDA200BDBBFB /* Frameworks */ = {
+		7DC05E652AA2311300820802 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,45 +41,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5C2518132AA1DDA200BDBBFB = {
+		7DC05E5F2AA2311300820802 = {
 			isa = PBXGroup;
 			children = (
-				5C25181E2AA1DDA200BDBBFB /* AvitoTest */,
-				5C25181D2AA1DDA200BDBBFB /* Products */,
+				7DC05E832AA2493E00820802 /* Service */,
+				7DC05E6A2AA2311300820802 /* AvitoTest */,
+				7DC05E692AA2311300820802 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5C25181D2AA1DDA200BDBBFB /* Products */ = {
+		7DC05E692AA2311300820802 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C25181C2AA1DDA200BDBBFB /* AvitoTest.app */,
+				7DC05E682AA2311300820802 /* AvitoTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5C25181E2AA1DDA200BDBBFB /* AvitoTest */ = {
+		7DC05E6A2AA2311300820802 /* AvitoTest */ = {
 			isa = PBXGroup;
 			children = (
-				5C25181F2AA1DDA200BDBBFB /* AppDelegate.swift */,
-				5C2518212AA1DDA200BDBBFB /* SceneDelegate.swift */,
-				5C2518232AA1DDA200BDBBFB /* ViewController.swift */,
-				5C2518282AA1DDA300BDBBFB /* Assets.xcassets */,
-				5C25182D2AA1DDA300BDBBFB /* Info.plist */,
-				5C2518332AA1E1BF00BDBBFB /* View.xib */,
+				7DC05E6B2AA2311300820802 /* AppDelegate.swift */,
+				7DC05E6D2AA2311300820802 /* SceneDelegate.swift */,
+				7DC05E6F2AA2311300820802 /* ViewController.swift */,
+				7DC05E742AA2311500820802 /* Assets.xcassets */,
+				7DC05E792AA2311500820802 /* Info.plist */,
+				7DC05E7F2AA2463E00820802 /* Assambly.swift */,
 			);
 			path = AvitoTest;
+			sourceTree = "<group>";
+		};
+		7DC05E832AA2493E00820802 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7DC05E842AA2497A00820802 /* ApiRequestManager.swift */,
+				7DC05E862AA24C9200820802 /* NetworkManager.swift */,
+				7DC05E882AA2548400820802 /* GoodsManagment.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5C25181B2AA1DDA200BDBBFB /* AvitoTest */ = {
+		7DC05E672AA2311300820802 /* AvitoTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C2518302AA1DDA300BDBBFB /* Build configuration list for PBXNativeTarget "AvitoTest" */;
+			buildConfigurationList = 7DC05E7C2AA2311500820802 /* Build configuration list for PBXNativeTarget "AvitoTest" */;
 			buildPhases = (
-				5C2518182AA1DDA200BDBBFB /* Sources */,
-				5C2518192AA1DDA200BDBBFB /* Frameworks */,
-				5C25181A2AA1DDA200BDBBFB /* Resources */,
+				7DC05E642AA2311300820802 /* Sources */,
+				7DC05E652AA2311300820802 /* Frameworks */,
+				7DC05E662AA2311300820802 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -81,76 +98,78 @@
 			);
 			name = AvitoTest;
 			productName = AvitoTest;
-			productReference = 5C25181C2AA1DDA200BDBBFB /* AvitoTest.app */;
+			productReference = 7DC05E682AA2311300820802 /* AvitoTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5C2518142AA1DDA200BDBBFB /* Project object */ = {
+		7DC05E602AA2311300820802 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					5C25181B2AA1DDA200BDBBFB = {
-						CreatedOnToolsVersion = 13.2.1;
+					7DC05E672AA2311300820802 = {
+						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
-			buildConfigurationList = 5C2518172AA1DDA200BDBBFB /* Build configuration list for PBXProject "AvitoTest" */;
-			compatibilityVersion = "Xcode 13.0";
+			buildConfigurationList = 7DC05E632AA2311300820802 /* Build configuration list for PBXProject "AvitoTest" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 5C2518132AA1DDA200BDBBFB;
-			productRefGroup = 5C25181D2AA1DDA200BDBBFB /* Products */;
+			mainGroup = 7DC05E5F2AA2311300820802;
+			productRefGroup = 7DC05E692AA2311300820802 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5C25181B2AA1DDA200BDBBFB /* AvitoTest */,
+				7DC05E672AA2311300820802 /* AvitoTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5C25181A2AA1DDA200BDBBFB /* Resources */ = {
+		7DC05E662AA2311300820802 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C2518342AA1E1BF00BDBBFB /* View.xib in Resources */,
-				5C2518292AA1DDA300BDBBFB /* Assets.xcassets in Resources */,
+				7DC05E752AA2311500820802 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5C2518182AA1DDA200BDBBFB /* Sources */ = {
+		7DC05E642AA2311300820802 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C2518242AA1DDA200BDBBFB /* ViewController.swift in Sources */,
-				5C2518202AA1DDA200BDBBFB /* AppDelegate.swift in Sources */,
-				5C2518222AA1DDA200BDBBFB /* SceneDelegate.swift in Sources */,
+				7DC05E872AA24C9200820802 /* NetworkManager.swift in Sources */,
+				7DC05E702AA2311300820802 /* ViewController.swift in Sources */,
+				7DC05E892AA2548400820802 /* GoodsManagment.swift in Sources */,
+				7DC05E802AA2463E00820802 /* Assambly.swift in Sources */,
+				7DC05E852AA2497A00820802 /* ApiRequestManager.swift in Sources */,
+				7DC05E6C2AA2311300820802 /* AppDelegate.swift in Sources */,
+				7DC05E6E2AA2311300820802 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		5C25182E2AA1DDA300BDBBFB /* Debug */ = {
+		7DC05E7A2AA2311500820802 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -194,7 +213,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -204,14 +223,13 @@
 			};
 			name = Debug;
 		};
-		5C25182F2AA1DDA300BDBBFB /* Release */ = {
+		7DC05E7B2AA2311500820802 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -249,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -259,7 +277,7 @@
 			};
 			name = Release;
 		};
-		5C2518312AA1DDA300BDBBFB /* Debug */ = {
+		7DC05E7D2AA2311500820802 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -269,9 +287,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AvitoTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -279,7 +296,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = school21.AvitoTest;
+				PRODUCT_BUNDLE_IDENTIFIER = antinlay.AvitoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -287,7 +304,7 @@
 			};
 			name = Debug;
 		};
-		5C2518322AA1DDA300BDBBFB /* Release */ = {
+		7DC05E7E2AA2311500820802 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -297,9 +314,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AvitoTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,7 +323,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = school21.AvitoTest;
+				PRODUCT_BUNDLE_IDENTIFIER = antinlay.AvitoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,25 +334,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5C2518172AA1DDA200BDBBFB /* Build configuration list for PBXProject "AvitoTest" */ = {
+		7DC05E632AA2311300820802 /* Build configuration list for PBXProject "AvitoTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C25182E2AA1DDA300BDBBFB /* Debug */,
-				5C25182F2AA1DDA300BDBBFB /* Release */,
+				7DC05E7A2AA2311500820802 /* Debug */,
+				7DC05E7B2AA2311500820802 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C2518302AA1DDA300BDBBFB /* Build configuration list for PBXNativeTarget "AvitoTest" */ = {
+		7DC05E7C2AA2311500820802 /* Build configuration list for PBXNativeTarget "AvitoTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C2518312AA1DDA300BDBBFB /* Debug */,
-				5C2518322AA1DDA300BDBBFB /* Release */,
+				7DC05E7D2AA2311500820802 /* Debug */,
+				7DC05E7E2AA2311500820802 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5C2518142AA1DDA200BDBBFB /* Project object */;
+	rootObject = 7DC05E602AA2311300820802 /* Project object */;
 }
