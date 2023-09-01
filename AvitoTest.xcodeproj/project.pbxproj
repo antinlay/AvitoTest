@@ -11,6 +11,7 @@
 		5C2518222AA1DDA200BDBBFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2518212AA1DDA200BDBBFB /* SceneDelegate.swift */; };
 		5C2518242AA1DDA200BDBBFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2518232AA1DDA200BDBBFB /* ViewController.swift */; };
 		5C2518292AA1DDA300BDBBFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2518282AA1DDA300BDBBFB /* Assets.xcassets */; };
+		5C2518342AA1E1BF00BDBBFB /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C2518332AA1E1BF00BDBBFB /* View.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		5C2518232AA1DDA200BDBBFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C2518282AA1DDA300BDBBFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C25182D2AA1DDA300BDBBFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C2518332AA1E1BF00BDBBFB /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				5C2518232AA1DDA200BDBBFB /* ViewController.swift */,
 				5C2518282AA1DDA300BDBBFB /* Assets.xcassets */,
 				5C25182D2AA1DDA300BDBBFB /* Info.plist */,
+				5C2518332AA1E1BF00BDBBFB /* View.xib */,
 			);
 			path = AvitoTest;
 			sourceTree = "<group>";
@@ -119,6 +122,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C2518342AA1E1BF00BDBBFB /* View.xib in Resources */,
 				5C2518292AA1DDA300BDBBFB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
