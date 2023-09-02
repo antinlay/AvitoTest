@@ -7,10 +7,6 @@
 
 import Foundation
 
-struct ItemData: Codable {
-    let advert: [Advert]
-}
-
 struct Advert: Codable {
     let id: String
     let title: String
@@ -18,10 +14,29 @@ struct Advert: Codable {
     let location: String
     let imageUrl: String
     let createdDate: String
-    
-    enum CodingKeys: String, CodingKey {
-        case id, title, price, location
-        case imageUrl = "image_url"
-        case createdDate = "created_date"
-    }
+}
+
+struct ItemData: Codable {
+    let advert: [Advert]
+}
+
+struct ItemDetails: Codable {
+    let id, title, price, location, imageUrl, createdDate: String
+    let description: String
+    let email: String
+    let phoneNumber: String
+    let address: String
+}
+
+struct AdvertDetails: Codable {
+    let id: String
+    let title: String
+    let price: String
+    let location: String
+    let image: Data
+    let createdDate: String
+    let description: String
+    let email: String
+    let phoneNumber: String
+    let address: String
 }

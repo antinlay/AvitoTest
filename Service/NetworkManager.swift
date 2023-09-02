@@ -8,7 +8,7 @@
 import Foundation
 
 protocol NetworkManagerProtocol {
-    func makeRequest(url: String, completion: @escaping (Result<Data, Error>) -> Void
+    func makeRequest(url: String, completion: @escaping (Result<Data, Error>) -> Void)
 }
 
 final class NetworkManager : NetworkManagerProtocol {
