@@ -12,13 +12,11 @@ protocol ItemCellInput: AnyObject {
 }
 
 class ItemCollectionViewCell: UICollectionViewCell {
-    // MARK: - Private constants
     private enum UIConstants {
         static let titleLabelFontSize: CGFloat = 16
         static let contentInset: CGFloat = 16
         static let cellCornerRadius: CGFloat = 10
     }
-    // MARK: - Private UI properties
     private lazy var itemImage: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFill
@@ -65,7 +63,7 @@ class ItemCollectionViewCell: UICollectionViewCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    // MARK: - Inits
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         initialize()
@@ -82,7 +80,6 @@ class ItemCollectionViewCell: UICollectionViewCell {
         [titleLabel, priceLabel, addressLabel, dateLabel].forEach({$0.text = nil})
     }
     private var presenter: ItemCellOutput?
-    // MARK: - Public functions
     func configure(with item: ItemData, presenter: ItemCellOutput) {
         titleLabel.text = item.title
         priceLabel.text = item.price
@@ -92,7 +89,7 @@ class ItemCollectionViewCell: UICollectionViewCell {
         self.presenter = presenter
         presenter.loadImage(imageUrl: item.imageUrl)
     }
-    // MARK: - Private functions
+    
     private func makeShadow() {
         layer.cornerRadius =  UIConstants.cellCornerRadius
         layer.shadowColor = UIColor.black.cgColor

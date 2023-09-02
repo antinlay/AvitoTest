@@ -8,14 +8,14 @@
 import Foundation
 
 class ItemListPresenter {
-    // MARK: - Private properties
+    
     private var itemManager: ItemManagerProtocol
     private var imageManager: ImageManagerProtocol
     private var items: [ItemData] = []
-    // MARK: - Public properties
+    
     weak var view: ItemListViewInput?
     var didTapToOpenItem: ((ItemData) -> Void)?
-    // MARK: - Init
+    
     init(itemManager: ItemManagerProtocol, imageManager: ImageManagerProtocol) {
         self.itemManager = itemManager
         self.imageManager = imageManager

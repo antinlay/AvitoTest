@@ -25,13 +25,12 @@ protocol ItemListViewOutput {
 }
 
 class ItemListViewController: UIViewController {
-    // MARK: - Private constants
     private enum UIConstants {
         static let errorLabelFontSize: CGFloat = 20
         static let contentInset: CGFloat = 16
         static let itemCellHeight: CGFloat = 280
     }
-    // MARK: - Private UI properties
+
     private lazy var itemCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -56,9 +55,9 @@ class ItemListViewController: UIViewController {
         label.isHidden = true
         return label
     }()
-    // MARK: - Private properties
+
     private let itemListPresenter: ItemListViewOutput
-    // MARK: - Init
+    
     init(itemListPresenter: ItemListViewOutput) {
         self.itemListPresenter = itemListPresenter
         super.init(nibName: nil, bundle: nil)
@@ -66,14 +65,14 @@ class ItemListViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    // MARK: - UIViewController life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         showLoading()
         itemListPresenter.loadItems()
     }
-    // MARK: - Private functions
+    
     private func setupView() {
         navigationItem.title = ""
         view.backgroundColor = .white

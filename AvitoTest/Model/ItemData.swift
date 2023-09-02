@@ -8,12 +8,7 @@
 import Foundation
 
 struct ItemData: Codable {
-    let id: String
-    let title: String
-    let price: String
-    let location: String
-    let imageUrl: String
-    let createdDate: String
+    let id, title, price, location, imageUrl, createdDate: String
 }
 
 struct ResponseData: Codable {
@@ -21,27 +16,11 @@ struct ResponseData: Codable {
 }
 
 struct ItemDetailData: Codable {
-    let id: String
-    let title: String
-    let price: String
-    let location: String
-    let imageUrl: String
-    let createdDate: String
-    let description: String
-    let email: String
-    let phoneNumber: String
-    let address: String
+    let id, title, price, location, imageUrl, createdDate, description, email, phoneNumber, address: String
 }
 
 struct ItemDetailModel: Codable {
-    let id: String
-    let title: String
-    let price: String
-    let location: String
+    let id, title, price, location: String
     let image: Data
-    let createdDate: String
-    let description: String
-    let email: String
-    let phoneNumber: String
-    let address: String
+    let createdDate, description, email, phoneNumber, address: String
 }

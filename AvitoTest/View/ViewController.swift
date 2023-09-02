@@ -17,7 +17,7 @@ protocol ItemViewInput: ViewInput {
 }
 
 class ItemViewController: UIViewController {
-    // MARK: - Private constants
+
     private enum UIConstants {
         static let errorLabelFontSize: CGFloat = 19
         static let titleLabelFontSize: CGFloat = 21
@@ -27,7 +27,7 @@ class ItemViewController: UIViewController {
         static let buttonStackViewHeight: CGFloat = 46
         static let buttonCornerRadius: CGFloat = 11
     }
-    // MARK: - Private UI properties
+
     private lazy var itemImage: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFit
@@ -121,7 +121,7 @@ class ItemViewController: UIViewController {
     private lazy var scrollView: UIScrollView = {
         let view = UIScrollView()
         view.showsVerticalScrollIndicator = false
-        view.contentSize = CGSize(width: view.frame.width, height: 900)
+        view.contentSize = CGSize(width: view.frame.width, height: 909)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.isHidden = true
         return view
@@ -165,9 +165,9 @@ class ItemViewController: UIViewController {
         label.isHidden = true
         return label
     }()
-    // MARK: - Private properties
+
     private var detailPresenter: ItemViewOutput
-    // MARK: - Init
+
     init(detailPresenter: ItemViewOutput) {
         self.detailPresenter = detailPresenter
         super.init(nibName: nil, bundle: nil)
@@ -175,7 +175,7 @@ class ItemViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    // MARK: - UIViewController life cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -183,7 +183,7 @@ class ItemViewController: UIViewController {
         detailPresenter.loadItemDetail()
     }
     
-    // MARK: - Private functions
+
     private func setupView() {
         view.backgroundColor = .white
         [callButton, writeButton].forEach({horizontalButtonStack.addArrangedSubview($0)})
