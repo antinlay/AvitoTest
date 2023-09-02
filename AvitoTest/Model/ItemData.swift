@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Advert: Codable {
+struct ItemData: Codable {
     let id: String
     let title: String
     let price: String
@@ -16,19 +16,24 @@ struct Advert: Codable {
     let createdDate: String
 }
 
-struct ItemData: Codable {
-    let advert: [Advert]
+struct ResponseData: Codable {
+    let advertisements: [ItemData]
 }
 
-struct ItemDetails: Codable {
-    let id, title, price, location, imageUrl, createdDate: String
+struct ItemDetailData: Codable {
+    let id: String
+    let title: String
+    let price: String
+    let location: String
+    let imageUrl: String
+    let createdDate: String
     let description: String
     let email: String
     let phoneNumber: String
     let address: String
 }
 
-struct AdvertDetails: Codable {
+struct ItemDetailModel: Codable {
     let id: String
     let title: String
     let price: String

@@ -8,7 +8,7 @@
 import Foundation
 
 enum TextData {
-    static let error = "Error: Something wrong!"
+    static let error = "Something wrong"
     static let description = "Description"
     static let call = "Call"
     static let write = "Write"

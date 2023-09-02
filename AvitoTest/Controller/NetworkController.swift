@@ -1,17 +1,17 @@
 //
-//  NetworkManager.swift
+//  NetworkController.swift
 //  AvitoTest
 //
-//  Created by codela on 01/09/23.
+//  Created by codela on 02/09/23.
 //
 
 import Foundation
 
-protocol NetworkManagerProtocol {
+protocol NetworkControllerProtocol {
     func makeRequest(url: String, completion: @escaping (Result<Data, Error>) -> Void)
 }
 
-final class NetworkManager: NetworkManagerProtocol {
+final class NetworkController: NetworkControllerProtocol {
 
     func makeRequest(url: String, completion: @escaping (Result<Data, Error>) -> Void) {
         guard let url = URL(string: url)

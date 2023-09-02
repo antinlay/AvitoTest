@@ -1,5 +1,5 @@
 //
-//  ItemCollectionViewCell.swift
+//  CollectionViewCell.swift
 //  AvitoTest
 //
 //  Created by codela on 02/09/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ItemCells: AnyObject {
+protocol ItemCellInput: AnyObject {
     func setImage(image: Data?)
 }
 
@@ -81,9 +81,9 @@ class ItemCollectionViewCell: UICollectionViewCell {
         presenter = nil
         [titleLabel, priceLabel, addressLabel, dateLabel].forEach({$0.text = nil})
     }
-    private var presenter: ItemCellsOutput?
+    private var presenter: ItemCellOutput?
     // MARK: - Public functions
-    func configure(with item: Advert, presenter: ItemCellsOutput) {
+    func configure(with item: ItemData, presenter: ItemCellOutput) {
         titleLabel.text = item.title
         priceLabel.text = item.price
         addressLabel.text = item.location
@@ -131,7 +131,7 @@ class ItemCollectionViewCell: UICollectionViewCell {
         ])
     }
 }
-extension ItemCollectionViewCell: ItemCells {
+extension ItemCollectionViewCell: ItemCellInput {
     func setImage(image: Data?) {
         loadingView.stopAnimating()
         itemImage.image = UIImage(data: image ?? Data())

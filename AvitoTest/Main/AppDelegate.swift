@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  AvitoTest
 //
-//  Created by codela on 01/09/23.
+//  Created by codela on 02/09/23.
 //
 
 import UIKit
@@ -33,3 +33,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+

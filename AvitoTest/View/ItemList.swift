@@ -1,5 +1,5 @@
 //
-//  ItemListViewController.swift
+//  ItemList.swift
 //  AvitoTest
 //
 //  Created by codela on 02/09/23.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-protocol View: AnyObject {
+protocol ViewInput: AnyObject {
     func showLoading()
     func showError()
 }
 
-protocol ItemListView: AnyObject, View {
+protocol ItemListViewInput: AnyObject, ViewInput {
     func updateCollectionView()
 }
 
@@ -20,7 +20,7 @@ protocol ItemListViewOutput {
     func viewDidTapToOpenItem(with index: Int)
     func loadItems()
     func itemsCount() -> Int
-    func itemByIndex(index: Int) -> Advert
+    func itemByIndex(index: Int) -> ItemData
     func getImageManager() -> ImageManagerProtocol
 }
 
@@ -98,7 +98,8 @@ class ItemListViewController: UIViewController {
     private func setupCollectionView() {
         itemCollectionView.delegate = self
         itemCollectionView.dataSource = self
-        itemCollectionView.register(ItemCollectionViewCell.self, forCellWithReuseIdentifier: String(describing: ItemCollectionViewCell.self))
+        itemCollectionView.register(ItemCollectionViewCell.self,
+                                       forCellWithReuseIdentifier: String(describing: ItemCollectionViewCell.self))
     }
 }
 extension ItemListViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -109,7 +110,7 @@ extension ItemListViewController: UICollectionViewDelegate, UICollectionViewData
         guard let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: String(describing: ItemCollectionViewCell.self),
             for: indexPath) as? ItemCollectionViewCell else { return ItemCollectionViewCell()}
-        let cellPresenter: ItemCellsOutput = ItemCollectionViewCellPresenter(imageManager: itemListPresenter.getImageManager(),
+        let cellPresenter: ItemCellOutput = ItemCollectionViewCellPresenter(imageManager: itemListPresenter.getImageManager(),
                                                                                   view: cell)
         cell.configure(with: itemListPresenter.itemByIndex(index: indexPath.row), presenter: cellPresenter)
         return cell
@@ -119,7 +120,7 @@ extension ItemListViewController: UICollectionViewDelegate, UICollectionViewData
         itemListPresenter.viewDidTapToOpenItem(with: indexPath.row)
     }
 }
-extension ItemListViewController: ItemListView {
+extension ItemListViewController: ItemListViewInput {
     func showLoading() {
         loadingView.startAnimating()
         errorLabel.isHidden = true
@@ -146,4 +147,3 @@ extension ItemListViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: Double(itemWidth), height: Double(itemHeight))
     }
 }
-

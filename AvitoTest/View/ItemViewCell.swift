@@ -1,5 +1,5 @@
 //
-//  ItemCollectionViewCellPresenter.swift
+//  ItemViewCell.swift
 //  AvitoTest
 //
 //  Created by codela on 02/09/23.
@@ -7,17 +7,17 @@
 
 import Foundation
 
-protocol ItemCellsOutput {
+protocol ItemCellOutput {
     func loadImage(imageUrl: String)
-    var view: ItemCells? { get set }
+    var view: ItemCellInput? { get set }
 }
 
-class ItemCollectionViewCellPresenter: ItemCellsOutput {
+class ItemCollectionViewCellPresenter: ItemCellOutput {
 
     private let imageManager: ImageManagerProtocol
-    weak var view: ItemCells?
+    weak var view: ItemCellInput?
     
-    init(imageManager: ImageManagerProtocol, view: ItemCells) {
+    init(imageManager: ImageManagerProtocol, view: ItemCellInput) {
         self.imageManager = imageManager
         self.view = view
     }

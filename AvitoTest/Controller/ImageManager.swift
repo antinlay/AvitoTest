@@ -13,10 +13,10 @@ protocol ImageManagerProtocol {
 
 final class ImageManager: ImageManagerProtocol {
     private var imageCache = NSCache<NSString, NSData>()
-    private let networkManager: NetworkManagerProtocol
+    private let networkController: NetworkControllerProtocol
     
-    init(networkManager: NetworkManagerProtocol) {
-        self.networkManager = networkManager
+    init(networkController: NetworkControllerProtocol) {
+        self.networkController = networkController
     }
     
     func fetchImage(imageUrl: String, completion: @escaping (Result<Data, Error>) -> Void) {
@@ -25,7 +25,7 @@ final class ImageManager: ImageManagerProtocol {
             completion(.success(data as Data))
             return
         }
-        networkManager.makeRequest(url: imageUrl) { [weak self] result in
+        networkController.makeRequest(url: imageUrl) { [weak self] result in
             switch result {
             case .success(let data):
                 let image = data as NSData

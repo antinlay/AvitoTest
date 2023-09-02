@@ -1,5 +1,5 @@
 //
-//  DetailPresenter.swift
+//  View.swift
 //  AvitoTest
 //
 //  Created by codela on 02/09/23.
@@ -7,23 +7,23 @@
 
 import Foundation
 
-final class ItemPresenter: ItemViewOutput {
+final class DetailPresenter: ItemViewOutput {
     
     // MARK: - Private properties
     private var itemManager: ItemManagerProtocol
-    private var item: Advert
+    private var item: ItemData
     // MARK: - Public properties
-    weak var view: ItemView?
-    var itemDetail: AdvertDetails?
+    weak var view: ItemViewInput?
+    var itemDetail: ItemDetailModel?
     // MARK: - Init
-    init(itemManager: ItemManagerProtocol, item: Advert) {
+    init(itemManager: ItemManagerProtocol, item: ItemData) {
         self.itemManager = itemManager
         self.item = item
     }
     // MARK: -
     func loadItemDetail() {
         view?.showLoading()
-        itemManager.fetchItemDetails(id: item.id) { [weak self] result in
+        itemManager.fetchItemDetailById(id: item.id) { [weak self] result in
             switch result {
             case .success(let itemDetail):
                 self?.itemDetail = itemDetail

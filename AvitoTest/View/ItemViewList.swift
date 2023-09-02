@@ -1,5 +1,5 @@
 //
-//  ItemListPresenter.swift
+//  ItemViewList.swift
 //  AvitoTest
 //
 //  Created by codela on 02/09/23.
@@ -11,10 +11,10 @@ class ItemListPresenter {
     // MARK: - Private properties
     private var itemManager: ItemManagerProtocol
     private var imageManager: ImageManagerProtocol
-    private var items: [Advert] = []
+    private var items: [ItemData] = []
     // MARK: - Public properties
-    weak var view: ItemListView?
-    var didTapToOpenItem: ((Advert) -> Void)?
+    weak var view: ItemListViewInput?
+    var didTapToOpenItem: ((ItemData) -> Void)?
     // MARK: - Init
     init(itemManager: ItemManagerProtocol, imageManager: ImageManagerProtocol) {
         self.itemManager = itemManager
@@ -28,7 +28,7 @@ extension ItemListPresenter: ItemListViewOutput {
     }
     func loadItems() {
         view?.showLoading()
-        itemManager.fetchItem { [weak self] result in
+        itemManager.fetchItems { [weak self] result in
             switch result {
             case .success(let items):
                 self?.items = items
@@ -46,7 +46,7 @@ extension ItemListPresenter: ItemListViewOutput {
         return items.count
     }
     
-    func itemByIndex(index: Int) -> Advert {
+    func itemByIndex(index: Int) -> ItemData {
         return items[index]
     }
     

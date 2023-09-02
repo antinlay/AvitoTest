@@ -1,5 +1,5 @@
 //
-//  ItemViewController.swift
+//  ViewController.swift
 //  AvitoTest
 //
 //  Created by codela on 02/09/23.
@@ -8,12 +8,12 @@
 import UIKit
 
 protocol ItemViewOutput {
-    var itemDetail: AdvertDetails? { get set }
+    var itemDetail: ItemDetailModel? { get set }
     func loadItemDetail()
 }
 
-protocol ItemView: View {
-    func updateItemData(item: AdvertDetails)
+protocol ItemViewInput: ViewInput {
+    func updateItemData(item: ItemDetailModel)
 }
 
 class ItemViewController: UIViewController {
@@ -166,10 +166,10 @@ class ItemViewController: UIViewController {
         return label
     }()
     // MARK: - Private properties
-    private var itemPresenter: ItemViewOutput
+    private var detailPresenter: ItemViewOutput
     // MARK: - Init
-    init(itemPresenter: ItemViewOutput) {
-        self.itemPresenter = itemPresenter
+    init(detailPresenter: ItemViewOutput) {
+        self.detailPresenter = detailPresenter
         super.init(nibName: nil, bundle: nil)
     }
     required init?(coder: NSCoder) {
@@ -180,7 +180,7 @@ class ItemViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         showLoading()
-        itemPresenter.loadItemDetail()
+        detailPresenter.loadItemDetail()
     }
     
     // MARK: - Private functions
@@ -260,8 +260,8 @@ class ItemViewController: UIViewController {
         ])
     }
 }
-extension ItemViewController: ItemView {
-    func updateItemData(item: AdvertDetails) {
+extension ItemViewController: ItemViewInput {
+    func updateItemData(item: ItemDetailModel) {
         
         loadingView.stopAnimating()
         

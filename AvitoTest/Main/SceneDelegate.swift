@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  AvitoTest
 //
-//  Created by codela on 01/09/23.
+//  Created by codela on 02/09/23.
 //
 
 import UIKit
@@ -10,7 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    var navigationFlow: NavigationFlow?
+    var navigatorFlow: NavigatorFlow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -20,10 +20,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         let navigationViewController = UINavigationController()
-        let assambly = Assambly()
+        let assembly = Assembly()
         window?.rootViewController = navigationViewController
-        navigationFlow = NavigationFlow(navigationViewController: navigationViewController, assambly: assambly)
-        navigationFlow?.start()
+        navigatorFlow = NavigatorFlow(navigationViewController: navigationViewController, assembly: assembly)
+        navigatorFlow?.start()
         window?.makeKeyAndVisible()
     }
 
