@@ -23,6 +23,8 @@
 		7DC05E9D2AA36EC500820802 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E9C2AA36EC500820802 /* ItemListViewController.swift */; };
 		7DC05E9F2AA3714300820802 /* TextData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E9E2AA3714300820802 /* TextData.swift */; };
 		7DC05EA12AA3723C00820802 /* ItemListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EA02AA3723C00820802 /* ItemListPresenter.swift */; };
+		7DC05EA42AA37BCA00820802 /* ItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EA32AA37BCA00820802 /* ItemPresenter.swift */; };
+		7DC05EA62AA37C2B00820802 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EA52AA37C2B00820802 /* ItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		7DC05E9C2AA36EC500820802 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		7DC05E9E2AA3714300820802 /* TextData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextData.swift; sourceTree = "<group>"; };
 		7DC05EA02AA3723C00820802 /* ItemListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListPresenter.swift; sourceTree = "<group>"; };
+		7DC05EA32AA37BCA00820802 /* ItemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPresenter.swift; sourceTree = "<group>"; };
+		7DC05EA52AA37C2B00820802 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 		7DC05E832AA2493E00820802 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				7DC05EA22AA37AA900820802 /* Controller */,
 				7DC05E972AA3667A00820802 /* View */,
 				7DC05E8A2AA33C1200820802 /* Model */,
 				7DC05E842AA2497A00820802 /* ApiRequestManager.swift */,
@@ -119,6 +124,15 @@
 				7DC05EA02AA3723C00820802 /* ItemListPresenter.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7DC05EA22AA37AA900820802 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7DC05EA32AA37BCA00820802 /* ItemPresenter.swift */,
+				7DC05EA52AA37C2B00820802 /* ItemViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +215,10 @@
 				7DC05E892AA2548400820802 /* ItemManager.swift in Sources */,
 				7DC05E802AA2463E00820802 /* Assambly.swift in Sources */,
 				7DC05E9D2AA36EC500820802 /* ItemListViewController.swift in Sources */,
+				7DC05EA42AA37BCA00820802 /* ItemPresenter.swift in Sources */,
 				7DC05E852AA2497A00820802 /* ApiRequestManager.swift in Sources */,
 				7DC05E6C2AA2311300820802 /* AppDelegate.swift in Sources */,
+				7DC05EA62AA37C2B00820802 /* ItemViewController.swift in Sources */,
 				7DC05E9B2AA3686200820802 /* ItemCollectionViewCellPresenter.swift in Sources */,
 				7DC05E6E2AA2311300820802 /* SceneDelegate.swift in Sources */,
 			);

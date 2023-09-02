@@ -48,8 +48,7 @@ final class ItemManager: ItemManagerProtocol {
         }
     }
     
-    func fetchItemDetails(id: String, completion: @escaping (Result<AdvertDetails, Error>) -> Void) {
-        networkManager.makeRequest(url: requestManager.detailsIdRequest(itemId: id)) { result in
+    func fetchItemDetails(id: String, completion: @escaping (Result<AdvertDetails, Error>) -> Void) { networkManager.makeRequest(url: requestManager.detailsIdRequest(id: id)) { result in
             switch result {
             case .success(let data):
                 do {

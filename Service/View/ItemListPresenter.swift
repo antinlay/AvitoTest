@@ -46,11 +46,11 @@ extension ItemListPresenter: ItemListViewOutput {
         return items.count
     }
     
-    func productByIndex(index: Int) -> Advert {
+    func itemByIndex(index: Int) -> Advert {
         return items[index]
     }
     
-    func getImageService() -> ImageManagerProtocol {
+    func getImageManager() -> ImageManagerProtocol {
         return imageManager
     }
 }

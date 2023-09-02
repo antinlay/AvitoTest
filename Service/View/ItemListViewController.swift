@@ -21,7 +21,7 @@ protocol ItemListViewOutput {
     func loadItems()
     func itemsCount() -> Int
     func itemByIndex(index: Int) -> Advert
-    func getImageService() -> ImageManagerProtocol
+    func getImageManager() -> ImageManagerProtocol
 }
 
 class ItemListViewController: UIViewController {
@@ -109,7 +109,7 @@ extension ItemListViewController: UICollectionViewDelegate, UICollectionViewData
         guard let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: String(describing: ItemCollectionViewCell.self),
             for: indexPath) as? ItemCollectionViewCell else { return ItemCollectionViewCell()}
-        let cellPresenter: ItemCellsOutput = ItemCollectionViewCellPresenter(imageManager: itemListPresenter.getImageService(),
+        let cellPresenter: ItemCellsOutput = ItemCollectionViewCellPresenter(imageManager: itemListPresenter.getImageManager(),
                                                                                   view: cell)
         cell.configure(with: itemListPresenter.itemByIndex(index: indexPath.row), presenter: cellPresenter)
         return cell

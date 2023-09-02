@@ -19,17 +19,17 @@ final class NavigationFlow {
     }
     
     func start() {
-        let productListPresenter = ProductListPresenter(productService: assemby.productService, imageService: assemby.imageService)
-        productListPresenter.didTapToOpenProduct = wantsToOpenProductDetail
-        let productListView = ProductListViewController(productListPresenter: productListPresenter)
-        productListPresenter.view = productListView
-        navigationViewController.pushViewController(productListView, animated: true)
+        let itemListPresenter = ItemListPresenter(itemManager: assemby.itemManager, imageManager: assemby.imageManager)
+        itemListPresenter.didTapToOpenItem = wantsToOpenItemDetail
+        let itemListView = ItemListViewController(itemListPresenter: itemListPresenter)
+        itemListPresenter.view = itemListView
+        navigationViewController.pushViewController(itemListView, animated: true)
     }
     
-    func wantsToOpenProductDetail(with product: ProductData) {
-        let detailPresenter = DetailPresenter(productService: assemby.productService, product: product)
-        let detailView = DetailViewController(detailPresenter: detailPresenter)
-        detailPresenter.view = detailView
-        navigationViewController.pushViewController(detailView, animated: true)
+    func wantsToOpenItemDetail(with item: Advert) {
+        let itemPresenter = ItemPresenter(itemManager: assemby.itemManager, item: item)
+        let itemView = ItemViewController(itemPresenter: itemPresenter)
+        itemPresenter.view = itemView
+        navigationViewController.pushViewController(itemView, animated: true)
     }
 }
