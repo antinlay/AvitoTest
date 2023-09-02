@@ -14,7 +14,8 @@
 		7DC05E802AA2463E00820802 /* Assambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E7F2AA2463E00820802 /* Assambly.swift */; };
 		7DC05E852AA2497A00820802 /* ApiRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E842AA2497A00820802 /* ApiRequestManager.swift */; };
 		7DC05E872AA24C9200820802 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E862AA24C9200820802 /* NetworkManager.swift */; };
-		7DC05E892AA2548400820802 /* GoodsManagment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E882AA2548400820802 /* GoodsManagment.swift */; };
+		7DC05E892AA2548400820802 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E882AA2548400820802 /* ItemManager.swift */; };
+		7DC05E8C2AA33C3300820802 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E8B2AA33C3300820802 /* ItemData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		7DC05E7F2AA2463E00820802 /* Assambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assambly.swift; sourceTree = "<group>"; };
 		7DC05E842AA2497A00820802 /* ApiRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestManager.swift; sourceTree = "<group>"; };
 		7DC05E862AA24C9200820802 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		7DC05E882AA2548400820802 /* GoodsManagment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsManagment.swift; sourceTree = "<group>"; };
+		7DC05E882AA2548400820802 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
+		7DC05E8B2AA33C3300820802 /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,11 +76,20 @@
 		7DC05E832AA2493E00820802 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				7DC05E8A2AA33C1200820802 /* Model */,
 				7DC05E842AA2497A00820802 /* ApiRequestManager.swift */,
 				7DC05E862AA24C9200820802 /* NetworkManager.swift */,
-				7DC05E882AA2548400820802 /* GoodsManagment.swift */,
+				7DC05E882AA2548400820802 /* ItemManager.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		7DC05E8A2AA33C1200820802 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7DC05E8B2AA33C3300820802 /* ItemData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +163,8 @@
 			files = (
 				7DC05E872AA24C9200820802 /* NetworkManager.swift in Sources */,
 				7DC05E702AA2311300820802 /* ViewController.swift in Sources */,
-				7DC05E892AA2548400820802 /* GoodsManagment.swift in Sources */,
+				7DC05E8C2AA33C3300820802 /* ItemData.swift in Sources */,
+				7DC05E892AA2548400820802 /* ItemManager.swift in Sources */,
 				7DC05E802AA2463E00820802 /* Assambly.swift in Sources */,
 				7DC05E852AA2497A00820802 /* ApiRequestManager.swift in Sources */,
 				7DC05E6C2AA2311300820802 /* AppDelegate.swift in Sources */,
