@@ -19,7 +19,7 @@ class ItemCollectionViewCell: UICollectionViewCell {
         static let cellCornerRadius: CGFloat = 10
     }
     // MARK: - Private UI properties
-    private lazy var productImage: UIImageView = {
+    private lazy var itemImage: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFill
         image.translatesAutoresizingMaskIntoConstraints = false
@@ -76,21 +76,21 @@ class ItemCollectionViewCell: UICollectionViewCell {
     }
     override func prepareForReuse() {
         super.prepareForReuse()
-        productImage.image = nil
+        itemImage.image = nil
         presenter?.view = nil
         presenter = nil
         [titleLabel, priceLabel, addressLabel, dateLabel].forEach({$0.text = nil})
     }
     private var presenter: ItemCellsOutput?
     // MARK: - Public functions
-    func configure(with product: Advert, presenter: ItemCellsOutput) {
-        titleLabel.text = product.title
-        priceLabel.text = product.price
-        addressLabel.text = product.location
-        dateLabel.text = product.createdDate
+    func configure(with item: Advert, presenter: ItemCellsOutput) {
+        titleLabel.text = item.title
+        priceLabel.text = item.price
+        addressLabel.text = item.location
+        dateLabel.text = item.createdDate
         loadingView.startAnimating()
         self.presenter = presenter
-        presenter.loadImage(imageUrl: product.imageUrl)
+        presenter.loadImage(imageUrl: item.imageUrl)
     }
     // MARK: - Private functions
     private func makeShadow() {
@@ -114,17 +114,17 @@ class ItemCollectionViewCell: UICollectionViewCell {
         verticalStack.alignment = .leading
         verticalStack.translatesAutoresizingMaskIntoConstraints = false
         [titleLabel, priceLabel, addressLabel, dateLabel].forEach({verticalStack.addArrangedSubview($0)})
-        [productImage, verticalStack, loadingView].forEach({addSubview($0)})
+        [itemImage, verticalStack, loadingView].forEach({addSubview($0)})
         NSLayoutConstraint.activate([
-            productImage.leftAnchor.constraint(equalTo: leftAnchor),
-            productImage.topAnchor.constraint(equalTo: topAnchor, constant: 16),
-            productImage.widthAnchor.constraint(equalTo: widthAnchor),
-            productImage.heightAnchor.constraint(equalToConstant: 150),
+            itemImage.leftAnchor.constraint(equalTo: leftAnchor),
+            itemImage.topAnchor.constraint(equalTo: topAnchor, constant: 16),
+            itemImage.widthAnchor.constraint(equalTo: widthAnchor),
+            itemImage.heightAnchor.constraint(equalToConstant: 150),
             
-            loadingView.centerXAnchor.constraint(equalTo: productImage.centerXAnchor),
-            loadingView.centerYAnchor.constraint(equalTo: productImage.centerYAnchor),
+            loadingView.centerXAnchor.constraint(equalTo: itemImage.centerXAnchor),
+            loadingView.centerYAnchor.constraint(equalTo: itemImage.centerYAnchor),
             
-            verticalStack.topAnchor.constraint(equalTo: productImage.bottomAnchor, constant: 16),
+            verticalStack.topAnchor.constraint(equalTo: itemImage.bottomAnchor, constant: 16),
             verticalStack.bottomAnchor.constraint(equalTo: bottomAnchor),
             verticalStack.leftAnchor.constraint(equalTo: leftAnchor, constant: 10),
             verticalStack.rightAnchor.constraint(equalTo: rightAnchor)
@@ -134,6 +134,6 @@ class ItemCollectionViewCell: UICollectionViewCell {
 extension ItemCollectionViewCell: ItemCells {
     func setImage(image: Data?) {
         loadingView.stopAnimating()
-        productImage.image = UIImage(data: image ?? Data())
+        itemImage.image = UIImage(data: image ?? Data())
     }
 }
