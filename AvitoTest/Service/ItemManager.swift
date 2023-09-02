@@ -15,7 +15,6 @@ protocol ItemManagerProtocol {
 final class ItemManager: ItemManagerProtocol {
     private var networkManager: NetworkManagerProtocol
     private var requestManager: ApiRequestManagerProtocol
-    //    private var dateFormatter: DateFormatterManagerProtocol
     private var imageManager: ImageManagerProtocol
     
     init(networkManager: NetworkManagerProtocol, requestManager: ApiRequestManagerProtocol, imageManager: ImageManagerProtocol) {
@@ -25,20 +24,20 @@ final class ItemManager: ItemManagerProtocol {
     }
     
     func fetchItem(completion: @escaping (Result<[Advert], Error>) -> Void) {
-        networkManager.makeRequest(url: requestManager.mainJsonRequest()) { [weak self] result in
+        networkManager.makeRequest(url: requestManager.mainJsonRequest()) { result in
             switch result {
             case .success(let data):
                 do {
                     let decoder = JSONDecoder()
                     decoder.keyDecodingStrategy = .convertFromSnakeCase
                     let itemData = try decoder.decode(ItemData.self, from: data)
-                    let products = itemData.advert.map({Advert(id: $0.id,
+                    let items = itemData.advert.map({Advert(id: $0.id,
                                                                title: $0.title,
                                                                price: $0.price,
                                                                location: $0.location,
                                                                imageUrl: $0.imageUrl,
                                                                createdDate: $0.createdDate)})
-                    completion(.success(products))
+                    completion(.success(items))
                 } catch let decodeError {
                     completion(.failure(decodeError))
                 }
@@ -48,26 +47,27 @@ final class ItemManager: ItemManagerProtocol {
         }
     }
     
-    func fetchItemDetails(id: String, completion: @escaping (Result<AdvertDetails, Error>) -> Void) { networkManager.makeRequest(url: requestManager.detailsIdRequest(id: id)) { result in
+    func fetchItemDetails(id: String, completion: @escaping (Result<AdvertDetails, Error>) -> Void) {
+        networkManager.makeRequest(url: requestManager.mainJsonRequest()) { result in
             switch result {
             case .success(let data):
                 do {
                     let decoder = JSONDecoder()
                     decoder.keyDecodingStrategy = .convertFromSnakeCase
-                    let product = try decoder.decode(ItemDetails.self, from: data)
-                    self.imageService.fetchImage(imageUrl: product.imageUrl) { [weak self] result in
+                    let item = try decoder.decode(ItemDetails.self, from: data)
+                    self.imageManager.fetchImage(imageUrl: item.imageUrl) { result in
                         switch result {
                         case .success(let image):
-                            completion(.success(AdvertDetails(id: product.id,
-                                                              title: product.title,
-                                                              price: product.price,
-                                                              location: product.location,
+                            completion(.success(AdvertDetails(id: item.id,
+                                                              title: item.title,
+                                                              price: item.price,
+                                                              location: item.location,
                                                               image: image,
-                                                              createdDate: product.createdDate,
-                                                              description: product.description,
-                                                              email: product.email,
-                                                              phoneNumber: product.phoneNumber,
-                                                              address: product.address)))
+                                                              createdDate: item.createdDate,
+                                                              description: item.description,
+                                                              email: item.email,
+                                                              phoneNumber: item.phoneNumber,
+                                                              address: item.address)))
                         case .failure(let error):
                             completion(.failure(error))
                         }

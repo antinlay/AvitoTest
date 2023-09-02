@@ -8,7 +8,7 @@
 import Foundation
 
 protocol AssamblyProtocol {
-    var apiRequestManager: ApiRequestManagerProtocol {get}
+    var apiRequestManager: ApiRequestManager {get}
     var networkManager: NetworkManagerProtocol {get}
     var itemManager: ItemManagerProtocol {get}
     var imageManager: ImageManagerProtocol {get}
@@ -17,6 +17,6 @@ protocol AssamblyProtocol {
 final class Assambly {
     lazy var apiRequestManager: ApiRequestManager = ApiRequestManager()
     lazy var networkManager: NetworkManagerProtocol = NetworkManager()
-    lazy var imageManager: ImageManagerProtocol = ImageManager(networkManager: networkManager)
     lazy var itemManager: ItemManagerProtocol = ItemManager(networkManager: networkManager, requestManager: apiRequestManager, imageManager: imageManager)
+    lazy var imageManager: ImageManagerProtocol = ImageManager(networkManager: networkManager)
 }

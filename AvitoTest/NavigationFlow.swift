@@ -10,16 +10,16 @@ import UIKit
 final class NavigationFlow {
     
     private let navigationViewController: UINavigationController
-    private let assemby: AssamblyProtocol
+    private let assambly: Assambly
     
-    init(navigationViewController: UINavigationController, assemby: AssamblyProtocol) {
+    init(navigationViewController: UINavigationController, assambly: Assambly) {
         self.navigationViewController = navigationViewController
         self.navigationViewController.navigationBar.tintColor = .black
-        self.assemby = assemby
+        self.assambly = assambly
     }
     
     func start() {
-        let itemListPresenter = ItemListPresenter(itemManager: assemby.itemManager, imageManager: assemby.imageManager)
+        let itemListPresenter = ItemListPresenter(itemManager: assambly.itemManager, imageManager: assambly.imageManager)
         itemListPresenter.didTapToOpenItem = wantsToOpenItemDetail
         let itemListView = ItemListViewController(itemListPresenter: itemListPresenter)
         itemListPresenter.view = itemListView
@@ -27,7 +27,7 @@ final class NavigationFlow {
     }
     
     func wantsToOpenItemDetail(with item: Advert) {
-        let itemPresenter = ItemPresenter(itemManager: assemby.itemManager, item: item)
+        let itemPresenter = ItemPresenter(itemManager: assambly.itemManager, item: item)
         let itemView = ItemViewController(itemPresenter: itemPresenter)
         itemPresenter.view = itemView
         navigationViewController.pushViewController(itemView, animated: true)

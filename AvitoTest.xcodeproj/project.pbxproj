@@ -12,19 +12,20 @@
 		7DC05E702AA2311300820802 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E6F2AA2311300820802 /* ViewController.swift */; };
 		7DC05E752AA2311500820802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC05E742AA2311500820802 /* Assets.xcassets */; };
 		7DC05E802AA2463E00820802 /* Assambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E7F2AA2463E00820802 /* Assambly.swift */; };
-		7DC05E852AA2497A00820802 /* ApiRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E842AA2497A00820802 /* ApiRequestManager.swift */; };
-		7DC05E872AA24C9200820802 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E862AA24C9200820802 /* NetworkManager.swift */; };
-		7DC05E892AA2548400820802 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E882AA2548400820802 /* ItemManager.swift */; };
-		7DC05E8C2AA33C3300820802 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E8B2AA33C3300820802 /* ItemData.swift */; };
-		7DC05E902AA35C2B00820802 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E8F2AA35C2B00820802 /* ImageManager.swift */; };
 		7DC05E962AA3652B00820802 /* NavigationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E952AA3652B00820802 /* NavigationFlow.swift */; };
-		7DC05E992AA3671900820802 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E982AA3671900820802 /* ItemCollectionViewCell.swift */; };
-		7DC05E9B2AA3686200820802 /* ItemCollectionViewCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E9A2AA3686200820802 /* ItemCollectionViewCellPresenter.swift */; };
-		7DC05E9D2AA36EC500820802 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E9C2AA36EC500820802 /* ItemListViewController.swift */; };
-		7DC05E9F2AA3714300820802 /* TextData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05E9E2AA3714300820802 /* TextData.swift */; };
-		7DC05EA12AA3723C00820802 /* ItemListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EA02AA3723C00820802 /* ItemListPresenter.swift */; };
-		7DC05EA42AA37BCA00820802 /* ItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EA32AA37BCA00820802 /* ItemPresenter.swift */; };
-		7DC05EA62AA37C2B00820802 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EA52AA37C2B00820802 /* ItemViewController.swift */; };
+		7DC05EAF2AA3957C00820802 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DC05E792AA2311500820802 /* Info.plist */; };
+		7DC05EB62AA3965900820802 /* ApiRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EB22AA3965900820802 /* ApiRequestManager.swift */; };
+		7DC05EB72AA3965900820802 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EB32AA3965900820802 /* NetworkManager.swift */; };
+		7DC05EB82AA3965900820802 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EB42AA3965900820802 /* ImageManager.swift */; };
+		7DC05EB92AA3965900820802 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EB52AA3965900820802 /* ItemManager.swift */; };
+		7DC05EBC2AA3968300820802 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EBA2AA3968300820802 /* ItemViewController.swift */; };
+		7DC05EBD2AA3968300820802 /* ItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EBB2AA3968300820802 /* ItemPresenter.swift */; };
+		7DC05EC02AA3969A00820802 /* TextData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EBE2AA3969A00820802 /* TextData.swift */; };
+		7DC05EC12AA3969A00820802 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EBF2AA3969A00820802 /* ItemData.swift */; };
+		7DC05EC62AA396AC00820802 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EC22AA396AC00820802 /* ItemCollectionViewCell.swift */; };
+		7DC05EC72AA396AC00820802 /* ItemCollectionViewCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EC32AA396AC00820802 /* ItemCollectionViewCellPresenter.swift */; };
+		7DC05EC82AA396AC00820802 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EC42AA396AC00820802 /* ItemListViewController.swift */; };
+		7DC05EC92AA396AC00820802 /* ItemListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC05EC52AA396AC00820802 /* ItemListPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,19 +36,19 @@
 		7DC05E742AA2311500820802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DC05E792AA2311500820802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DC05E7F2AA2463E00820802 /* Assambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assambly.swift; sourceTree = "<group>"; };
-		7DC05E842AA2497A00820802 /* ApiRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestManager.swift; sourceTree = "<group>"; };
-		7DC05E862AA24C9200820802 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		7DC05E882AA2548400820802 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
-		7DC05E8B2AA33C3300820802 /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
-		7DC05E8F2AA35C2B00820802 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		7DC05E952AA3652B00820802 /* NavigationFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationFlow.swift; sourceTree = "<group>"; };
-		7DC05E982AA3671900820802 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
-		7DC05E9A2AA3686200820802 /* ItemCollectionViewCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCellPresenter.swift; sourceTree = "<group>"; };
-		7DC05E9C2AA36EC500820802 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
-		7DC05E9E2AA3714300820802 /* TextData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextData.swift; sourceTree = "<group>"; };
-		7DC05EA02AA3723C00820802 /* ItemListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListPresenter.swift; sourceTree = "<group>"; };
-		7DC05EA32AA37BCA00820802 /* ItemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPresenter.swift; sourceTree = "<group>"; };
-		7DC05EA52AA37C2B00820802 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		7DC05EB22AA3965900820802 /* ApiRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiRequestManager.swift; path = Service/ApiRequestManager.swift; sourceTree = "<group>"; };
+		7DC05EB32AA3965900820802 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Service/NetworkManager.swift; sourceTree = "<group>"; };
+		7DC05EB42AA3965900820802 /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageManager.swift; path = Service/ImageManager.swift; sourceTree = "<group>"; };
+		7DC05EB52AA3965900820802 /* ItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemManager.swift; path = Service/ItemManager.swift; sourceTree = "<group>"; };
+		7DC05EBA2AA3968300820802 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemViewController.swift; path = Service/Controller/ItemViewController.swift; sourceTree = "<group>"; };
+		7DC05EBB2AA3968300820802 /* ItemPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemPresenter.swift; path = Service/Controller/ItemPresenter.swift; sourceTree = "<group>"; };
+		7DC05EBE2AA3969A00820802 /* TextData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextData.swift; path = Service/Model/TextData.swift; sourceTree = "<group>"; };
+		7DC05EBF2AA3969A00820802 /* ItemData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemData.swift; path = Service/Model/ItemData.swift; sourceTree = "<group>"; };
+		7DC05EC22AA396AC00820802 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemCollectionViewCell.swift; path = Service/View/ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		7DC05EC32AA396AC00820802 /* ItemCollectionViewCellPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemCollectionViewCellPresenter.swift; path = Service/View/ItemCollectionViewCellPresenter.swift; sourceTree = "<group>"; };
+		7DC05EC42AA396AC00820802 /* ItemListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemListViewController.swift; path = Service/View/ItemListViewController.swift; sourceTree = "<group>"; };
+		7DC05EC52AA396AC00820802 /* ItemListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemListPresenter.swift; path = Service/View/ItemListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +65,6 @@
 		7DC05E5F2AA2311300820802 = {
 			isa = PBXGroup;
 			children = (
-				7DC05E832AA2493E00820802 /* Service */,
 				7DC05E6A2AA2311300820802 /* AvitoTest */,
 				7DC05E692AA2311300820802 /* Products */,
 			);
@@ -81,6 +81,18 @@
 		7DC05E6A2AA2311300820802 /* AvitoTest */ = {
 			isa = PBXGroup;
 			children = (
+				7DC05EC22AA396AC00820802 /* ItemCollectionViewCell.swift */,
+				7DC05EC32AA396AC00820802 /* ItemCollectionViewCellPresenter.swift */,
+				7DC05EC52AA396AC00820802 /* ItemListPresenter.swift */,
+				7DC05EC42AA396AC00820802 /* ItemListViewController.swift */,
+				7DC05EBF2AA3969A00820802 /* ItemData.swift */,
+				7DC05EBE2AA3969A00820802 /* TextData.swift */,
+				7DC05EBB2AA3968300820802 /* ItemPresenter.swift */,
+				7DC05EBA2AA3968300820802 /* ItemViewController.swift */,
+				7DC05EB22AA3965900820802 /* ApiRequestManager.swift */,
+				7DC05EB42AA3965900820802 /* ImageManager.swift */,
+				7DC05EB52AA3965900820802 /* ItemManager.swift */,
+				7DC05EB32AA3965900820802 /* NetworkManager.swift */,
 				7DC05E6B2AA2311300820802 /* AppDelegate.swift */,
 				7DC05E6D2AA2311300820802 /* SceneDelegate.swift */,
 				7DC05E6F2AA2311300820802 /* ViewController.swift */,
@@ -90,49 +102,6 @@
 				7DC05E952AA3652B00820802 /* NavigationFlow.swift */,
 			);
 			path = AvitoTest;
-			sourceTree = "<group>";
-		};
-		7DC05E832AA2493E00820802 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				7DC05EA22AA37AA900820802 /* Controller */,
-				7DC05E972AA3667A00820802 /* View */,
-				7DC05E8A2AA33C1200820802 /* Model */,
-				7DC05E842AA2497A00820802 /* ApiRequestManager.swift */,
-				7DC05E862AA24C9200820802 /* NetworkManager.swift */,
-				7DC05E882AA2548400820802 /* ItemManager.swift */,
-				7DC05E8F2AA35C2B00820802 /* ImageManager.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		7DC05E8A2AA33C1200820802 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7DC05E8B2AA33C3300820802 /* ItemData.swift */,
-				7DC05E9E2AA3714300820802 /* TextData.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		7DC05E972AA3667A00820802 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7DC05E982AA3671900820802 /* ItemCollectionViewCell.swift */,
-				7DC05E9A2AA3686200820802 /* ItemCollectionViewCellPresenter.swift */,
-				7DC05E9C2AA36EC500820802 /* ItemListViewController.swift */,
-				7DC05EA02AA3723C00820802 /* ItemListPresenter.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		7DC05EA22AA37AA900820802 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				7DC05EA32AA37BCA00820802 /* ItemPresenter.swift */,
-				7DC05EA52AA37C2B00820802 /* ItemViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DC05E752AA2311500820802 /* Assets.xcassets in Resources */,
+				7DC05EAF2AA3957C00820802 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,23 +174,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DC05E872AA24C9200820802 /* NetworkManager.swift in Sources */,
-				7DC05EA12AA3723C00820802 /* ItemListPresenter.swift in Sources */,
-				7DC05E992AA3671900820802 /* ItemCollectionViewCell.swift in Sources */,
 				7DC05E962AA3652B00820802 /* NavigationFlow.swift in Sources */,
+				7DC05EC92AA396AC00820802 /* ItemListPresenter.swift in Sources */,
+				7DC05EC82AA396AC00820802 /* ItemListViewController.swift in Sources */,
+				7DC05EC72AA396AC00820802 /* ItemCollectionViewCellPresenter.swift in Sources */,
+				7DC05EBD2AA3968300820802 /* ItemPresenter.swift in Sources */,
+				7DC05EB92AA3965900820802 /* ItemManager.swift in Sources */,
 				7DC05E702AA2311300820802 /* ViewController.swift in Sources */,
-				7DC05E8C2AA33C3300820802 /* ItemData.swift in Sources */,
-				7DC05E902AA35C2B00820802 /* ImageManager.swift in Sources */,
-				7DC05E9F2AA3714300820802 /* TextData.swift in Sources */,
-				7DC05E892AA2548400820802 /* ItemManager.swift in Sources */,
+				7DC05EB62AA3965900820802 /* ApiRequestManager.swift in Sources */,
+				7DC05EB82AA3965900820802 /* ImageManager.swift in Sources */,
+				7DC05EB72AA3965900820802 /* NetworkManager.swift in Sources */,
 				7DC05E802AA2463E00820802 /* Assambly.swift in Sources */,
-				7DC05E9D2AA36EC500820802 /* ItemListViewController.swift in Sources */,
-				7DC05EA42AA37BCA00820802 /* ItemPresenter.swift in Sources */,
-				7DC05E852AA2497A00820802 /* ApiRequestManager.swift in Sources */,
+				7DC05EC02AA3969A00820802 /* TextData.swift in Sources */,
+				7DC05EBC2AA3968300820802 /* ItemViewController.swift in Sources */,
 				7DC05E6C2AA2311300820802 /* AppDelegate.swift in Sources */,
-				7DC05EA62AA37C2B00820802 /* ItemViewController.swift in Sources */,
-				7DC05E9B2AA3686200820802 /* ItemCollectionViewCellPresenter.swift in Sources */,
 				7DC05E6E2AA2311300820802 /* SceneDelegate.swift in Sources */,
+				7DC05EC12AA3969A00820802 /* ItemData.swift in Sources */,
+				7DC05EC62AA396AC00820802 /* ItemCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
