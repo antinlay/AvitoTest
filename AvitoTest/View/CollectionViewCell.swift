@@ -2,7 +2,7 @@
 //  CollectionViewCell.swift
 //  AvitoTest
 //
-//  Created by codela on 02/09/23.
+//  Created by antinlay on 02/09/23.
 //
 
 import UIKit
@@ -89,7 +89,7 @@ class ItemCollectionViewCell: UICollectionViewCell {
         self.presenter = presenter
         presenter.loadImage(imageUrl: item.imageUrl)
     }
-    
+
     private func makeShadow() {
         layer.cornerRadius =  UIConstants.cellCornerRadius
         layer.shadowColor = UIColor.black.cgColor

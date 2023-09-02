@@ -2,7 +2,7 @@
 //  ItemViewList.swift
 //  AvitoTest
 //
-//  Created by codela on 02/09/23.
+//  Created by antinlay on 02/09/23.
 //
 
 import Foundation
@@ -15,7 +15,7 @@ class ItemListPresenter {
     
     weak var view: ItemListViewInput?
     var didTapToOpenItem: ((ItemData) -> Void)?
-    
+
     init(itemManager: ItemManagerProtocol, imageManager: ImageManagerProtocol) {
         self.itemManager = itemManager
         self.imageManager = imageManager

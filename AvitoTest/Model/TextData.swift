@@ -2,7 +2,7 @@
 //  TextData.swift
 //  AvitoTest
 //
-//  Created by codela on 02/09/23.
+//  Created by antinlay on 02/09/23.
 //
 
 import Foundation
