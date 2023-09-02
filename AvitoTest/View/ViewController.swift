@@ -19,13 +19,13 @@ protocol ItemViewInput: ViewInput {
 class ItemViewController: UIViewController {
     // MARK: - Private constants
     private enum UIConstants {
-        static let errorLabelFontSize: CGFloat = 20
-        static let titleLabelFontSize: CGFloat = 22
+        static let errorLabelFontSize: CGFloat = 19
+        static let titleLabelFontSize: CGFloat = 21
         static let regularFontSize: CGFloat = 16
         static let contentInset: CGFloat = 16
-        static let imageViewHeight: CGFloat = 320
-        static let buttonStackViewHeight: CGFloat = 45
-        static let buttonCornerRadius: CGFloat = 10
+        static let imageViewHeight: CGFloat = 300
+        static let buttonStackViewHeight: CGFloat = 46
+        static let buttonCornerRadius: CGFloat = 11
     }
     // MARK: - Private UI properties
     private lazy var itemImage: UIImageView = {
@@ -121,7 +121,7 @@ class ItemViewController: UIViewController {
     private lazy var scrollView: UIScrollView = {
         let view = UIScrollView()
         view.showsVerticalScrollIndicator = false
-//        view.contentSize = CGSize(width: view.frame.width, height: 900)
+        view.contentSize = CGSize(width: view.frame.width, height: 900)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.isHidden = true
         return view
